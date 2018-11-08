@@ -84,11 +84,10 @@ for(var i = 0; i < animals.length; i++) {
 	animals[i].walk = function() {
 		console.log(this.name + ' took a walk');
 		this.hunger--;
-	};
-}
-console.log('dog is walking');
-dog.walk();
+	
 console.log(`${this.name} took a walk`);
+		};
+}
 
 /*
 	Part 5: Now these animals can walk and talk by themselves, but they're quite lonely.
