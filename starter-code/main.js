@@ -88,7 +88,7 @@ for(var i = 0; i < animals.length; i++) {
 }
 console.log('dog is walking');
 dog.walk();
-console.log(dog.hunger);
+console.log(`${this.name} took a walk`);
 
 /*
 	Part 5: Now these animals can walk and talk by themselves, but they're quite lonely.
@@ -114,12 +114,11 @@ console.log(dog.hunger);
 for(var i = 0; i < animals.length; i++) {
 	animals[i].makeFriend = function(otherAnimal) {
 		this.friend = otherAnimal;
+
+console.log(`${this.name} made a friend!`);
+		
 	};
 }
-
-console.log('dog made friends with a cat');
-dog.makeFriend(otherAnimal);
-dog.friend.makeNoise();
 
 /* BONUS
 This bonus will be a challenge! To complete this step, you'll need to do some Googling to look up things that have not yet been covered.
